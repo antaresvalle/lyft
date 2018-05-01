@@ -1,3 +1,284 @@
-/*
- * Estilos de tu proyecto
- */
+
+body {
+ 	font-family: 'Montserrat', sans-serif;
+ 	margin: 0;
+ }
+
+/* HEADER */ 
+header {
+    height: 1245px;
+}
+
+ header div.img-background {
+ 	background-image: url("../assets/images/hero.gif");
+ 	height: 50em;
+ 	width: 100%;
+ 	background-repeat: no-repeat;
+ 	background-size: cover;
+ 	position: relative;
+    top: -8em;
+ }
+
+ header div.gradient {
+ 	background-image: linear-gradient(to bottom,#601b7b,#2e1e67);
+ 	height: 38em;
+ 	width: 100%;
+ 	position: relative;
+    top: -10em;
+ }
+ 
+
+ header img {
+ 	width: 200%;
+ 	height: 100%;
+ }
+
+nav.navbar {
+    background-color: transparent;
+    color: white;
+    display: inline-block;
+    padding: 2.09em;
+    position: fixed;
+    width: 100%;
+    z-index: 10; 
+}
+
+nav.navbar div.nav-container {
+    margin: 0 3em;
+} 
+
+nav.navbar div.nav-container a.brand {
+    color: inherit;
+    font-size: 2em;
+    position: relative;
+    text-decoration: none;
+    top: 29%;
+}
+
+a.menu-link {
+    color: white;
+    cursor: pointer;
+    margin-right: 0.2em;
+    padding: 1em;
+    text-decoration: none;
+    font-size: 1.2em;
+ }
+
+a.menu-link:hover {
+    color: #ff02c0;
+}
+
+a.menu-link:active {
+    background-color: #18bc9c;
+}
+
+a.border-buttom {
+	border: 1px solid white;
+	border-radius: 10px;
+    padding: 0.5em 0.8em;
+
+}
+
+div#menu {
+    display: inline-block;
+    letter-spacing: .06em;
+    padding-left: 60em;  
+    position: relative;
+    top: -0.38em;
+}
+
+ .logo img {
+ 	width: 4em;
+ }
+
+.first-row .col {
+    height: 26em;
+    background-color: white;
+    width: 44em;
+    top: 7.5em;
+    right: 0;
+    position: absolute;
+}
+
+/* MAIN */ 
+
+.col-content {
+	padding-left: 4em;
+	padding-top: 1em;
+}
+
+h2 {
+	color: #352384;
+	font-size: 2.5em;
+	font-weight: 600;
+	line-height: 1;
+	margin-bottom: 0;
+}
+
+h4 {
+	margin: 0.5em;
+	color: #352384;
+}
+
+input[type="text"]{
+    width: 80%;
+    border: none;
+    border-bottom: 1px solid #e9ecef;
+    height: 3em;
+    margin-top: 1.6em;
+ }
+
+ input::placeholder {
+    color: #6b757c;
+    font-size: 1.3em;
+ }
+
+ button {
+ 	background-color: #ff02c0;
+ 	border-color: #ff02c0;
+    border-radius: 10px;
+    padding: 1.4em 2em;
+    margin: 2em 0;
+    margin-right: 1.3em;
+ }
+
+ button a {
+ 	text-decoration: none;
+ 	color: white;
+ 	font-size: 1.5em;
+ }
+
+ small {
+ 	display: block;
+ 	font-size: 10px;
+ 	color: #728099;
+ }
+
+ h3 {
+ 	font-size: 2em;
+ 	font-weight: 300;
+ }
+
+ .intro {
+ 	display: flex;
+ }
+
+ .intro .col-01 {
+ 	padding: 2em 10em 0 12em;
+ 	color: white;
+ 	width: 30%;
+ 	display: inline-block;
+ }
+
+ .intro .col-02 {
+ 	padding: 2.5em 5em 0 5em;
+ 	color: white;
+ 	width: 30%;
+ 	display: inline-block;
+ }
+
+ .img-phone img {
+ 	width: 90%;
+ }
+
+ .row-main {
+ 	height: 35em;
+ 	display: flex;
+ }
+
+ main .row-main .col-main-01 {
+ 	width: 35%;
+ 	display: inline-block;
+ 	padding: 8em 10em 0 5em;
+ }
+
+  main .row-main .col-main-01 h3 {
+ 	font-weight: 700;
+ }
+
+  main .row-main .col-main-01 p.sub {
+  	text-transform: uppercase;
+ }
+
+ p.sub a {
+ 	text-decoration: none;
+ 	color: #ff02c0;
+ }
+
+ main .row-main .col-main-02 {
+ 	width: 65%;
+ 	display: inline-block;
+ }
+
+ul {
+  list-style-type: none;
+}
+
+li p {
+	padding: 0.8em 0;
+}
+
+ footer {
+ 	height: 35em;
+ 	background-color: #333546;
+ 	color: white;
+ }
+  .footer-container {
+ 	padding: 3em 10em;
+ 	display: flex;
+ }
+
+  .footer-container .col {
+  	width: 30%;
+  }
+
+  .icons {
+  	padding-top: 1.5em;
+  }
+
+  .icon-img {
+  	padding: 1em 0;
+  }
+
+  .icon-img img {
+  	width: 40%;
+  }
+
+  footer .social {
+  	display: block;
+  	text-align: center;
+  }
+
+  footer .social ul li a{
+  	color: white;
+  	text-decoration: none;
+  }
+
+  footer .social ul li{
+  	border: solid 1px white;
+    border-radius: 50%;
+    display: inline-block;
+    padding: 0.6em;
+    width: 1.3em;
+    height: 1.3em;
+    font-size: 1.2em;
+    background-color: transparent;
+    margin: 0 1em;
+  }
+
+  footer .col ul li h4{
+  	color: white;
+  	text-decoration: none;
+  	margin: 0;
+  }
+
+  hr {
+  	width: 50%;
+  }
+
+  footer small {
+  	text-align: center;
+  	font-size: 14px;
+  	color: white;
+  	padding-top: 2em;
+  }
