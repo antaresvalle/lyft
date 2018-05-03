@@ -4,6 +4,10 @@ body {
  	margin: 0;
  }
 
+ /*a {
+ 	cursor: pointer;
+ }*/
+
 /* HEADER */ 
 header {
     height: 1245px;
@@ -19,8 +23,17 @@ header {
     width: 100%;
  }
 
+ header div.mask {
+  height: 7em;
+    width: 100%;
+    background: linear-gradient(to bottom,transparent,#651c7e);
+    position: absolute;
+    top: 62vh;
+    z-index: 6;
+ }
+
  header div.gradient {
- 	background-image: linear-gradient(to bottom,#601b7b,#2e1e67);
+ 	background-image: linear-gradient(to bottom,#651c7e,#2e1e67);
  	height: 38em;
  	position: relative;
     top: -10em;
@@ -57,7 +70,7 @@ nav.navbar div.nav-container a.brand {
 
 a.menu-link {
     color: white;
-    cursor: pointer;
+    /*cursor: pointer;*/
     font-size: 1.2em;
     margin-right: 0.2em;
     padding: 1em;
@@ -66,10 +79,6 @@ a.menu-link {
 
 a.menu-link:hover {
     color: #ff02c0;
-}
-
-a.menu-link:active {
-    background-color: #18bc9c;
 }
 
 a.border-buttom {
@@ -124,6 +133,10 @@ input[type="text"] {
  input::placeholder {
     color: #6b757c;
     font-size: 1.3em;
+ }
+
+ input:focus {
+  outline: none;
  }
 
  button {
@@ -205,6 +218,11 @@ input[type="text"] {
  	color: #ff02c0;
  }
 
+ p.sub a:hover {
+  text-decoration: underline;
+  color: #de03a8;
+ }
+
  main .row-main .col-main-02 {
  	width: 65%;
  	display: inline-block;
@@ -246,14 +264,22 @@ li p {
   	width: 40%;
   }
 
+  .icon-img img:hover {
+  	opacity: 0.5;
+  }
+
   footer .social {
   	display: block;
   	text-align: center;
   }
 
-  footer .social ul li a{
+  footer .social ul li a {
   	color: white;
   	text-decoration: none;
+  }
+
+  footer .social li:hover {
+    opacity: 0.5;
   }
 
   footer .social ul li{
@@ -266,12 +292,28 @@ li p {
     font-size: 1.2em;
     background-color: transparent;
     margin: 0 1em;
+    cursor: pointer;
   }
 
   footer .col ul li h4{
   	color: white;
   	text-decoration: none;
   	margin: 0;
+  }
+
+  .col ul li {
+    margin: 1.5em 0;
+  }
+
+
+  .col ul li a {
+  	color: white;
+  	text-decoration: none;
+  }
+
+  .col ul li a:hover {
+  	color: #ff02c0;
+  	text-decoration: underline;
   }
 
   hr {
